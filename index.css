@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.overlay{
+    display: grid;
+    place-items: center;
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    width: 500px;
+    height: 350px;
+
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #FF004F, #e41c38);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bill,
+.tip,
+.total{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.bill:focus,
+.tip:focus,
+.total:focus{
+    outline: none;
+}
+
+.bill::placeholder,
+.tip::placeholder,
+.total::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.calculate{
+    margin-top: 20px;
+    border: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.tip,
+.total{
+    cursor: default;
+}
+
+.label-tip{
+    padding-top: 50px;
+}
+
+.label-total{
+    padding-top: 20px;
+}
+
+label{
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 15px;
+}
