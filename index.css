@@ -78,3 +78,10 @@ label{
     font-family: sans-serif;
     font-size: 15px;
 }
+
+
+@media (max-width: 499px) {
+    .box{
+        width: 310px;
+    }
+}
